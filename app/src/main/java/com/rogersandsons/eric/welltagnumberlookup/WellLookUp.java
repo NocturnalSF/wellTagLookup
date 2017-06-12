@@ -48,6 +48,9 @@ public class WellLookUp extends AppCompatActivity {
         String wellData = null;
         EditText tagNum = (EditText) findViewById(R.id.editText);
         String TagNum = tagNum.getText().toString();
+        if (TagNum.substring(TagNum.length()-1).equals(" ")){
+            TagNum = TagNum.substring(0, TagNum.length()-1);
+        }
         if (TagNum != null && !TagNum.equals("") && !TagNum.equals(" ")) {
             countyCode = TagNum.substring(0, 2).toUpperCase();
             String tagNumbers = TagNum.substring(2);
