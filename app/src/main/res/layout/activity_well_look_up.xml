@@ -5,67 +5,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.rogersandsons.eric.welltagnumberlookup.WellLookUp"
-    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteY="89dp"
     tools:layout_editor_absoluteX="0dp">
 
     <TextView
         android:id="@+id/TagNumID"
-        android:layout_width="83dp"
-        android:layout_height="20dp"
-        android:text="Tag Number:"
+        android:layout_width="218dp"
+        android:layout_height="28dp"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="10dp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
+        android:text="Tag Number:"
+        android:textSize="18sp"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/TotalDepthID"
-        app:layout_constraintRight_toRightOf="@+id/DrillersNameID"
-        android:layout_marginTop="137dp"
+        app:layout_constraintBottom_toTopOf="@+id/DrillersNameID"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="136dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editText"
-        tools:layout_editor_absoluteY="157dp"
-        app:layout_constraintHorizontal_bias="0.615"
-        app:layout_constraintVertical_bias="1.0" />
+        android:layout_marginBottom="9dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
         android:id="@+id/btnLookUp"
-        android:layout_width="0dp"
+        android:layout_width="335dp"
         android:layout_height="48dp"
         android:onClick="LookUp"
         android:text="@string/look_up"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/DrillersNameID"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="72dp"
+        app:layout_constraintBottom_toTopOf="@+id/TagNumID"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="75dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginBottom="10dp"
+        app:layout_constraintLeft_toLeftOf="@+id/editText" />
 
     <EditText
 
         android:id="@+id/editText"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="493dp"
+        android:layout_height="46dp"
         android:ems="10"
         android:hint="Tag Number"
         android:inputType="text"
         android:onClick="clearText"
         android:selectAllOnFocus="false"
+        android:layout_marginStart="5dp"
         tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/btnLookUp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="4dp"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="7dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
 
@@ -76,127 +57,148 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="20dp"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="20dp" />
+        tools:layout_editor_absoluteY="19dp" />
 
     <TextView
         android:id="@+id/DrillersNameID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
         android:text="Driller's Name:"
-        android:layout_marginStart="16dp"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="195dp"
+        android:textSize="18sp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/CompleteDate"
+        app:layout_constraintRight_toRightOf="@+id/TagNumID"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginBottom="10dp"
+        app:layout_constraintLeft_toLeftOf="@+id/TagNumID" />
 
     <TextView
         android:id="@+id/TotalDepthID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
         android:text="Total Depth:"
-        android:layout_marginStart="16dp"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/CasingDiam"
+        android:textSize="18sp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/CasingDepthID"
+        app:layout_constraintRight_toRightOf="@+id/CasingDiam"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:layout_marginBottom="19dp"
+        app:layout_constraintLeft_toLeftOf="@+id/CasingDiam" />
 
     <TextView
         android:id="@+id/CasingDepthID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
         android:text="Casing Depth: "
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="18dp"
-        app:layout_constraintTop_toBottomOf="@+id/TotalDepthID"
+        android:textSize="18sp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/TotalDepthID"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:layout_marginBottom="111dp"
+        app:layout_constraintLeft_toLeftOf="@+id/TotalDepthID" />
 
     <TextView
         android:id="@+id/CasingTypeID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="218dp"
+        android:layout_height="0dp"
         android:text="Casing Type: "
-        android:layout_marginStart="16dp"
+        android:textSize="18sp"
         tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="15dp"
-        app:layout_constraintTop_toBottomOf="@+id/CasingDepthID"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/TagNumID"
+        app:layout_constraintRight_toRightOf="parent"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TagNumID" />
 
     <TextView
         android:id="@+id/PumpRateID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
         android:text="Pumping Rate: "
-        android:layout_marginStart="16dp"
+        android:textSize="18sp"
         tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="20dp"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/CasingTypeID"
+        android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/CasingTypeID"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="@+id/CasingTypeID" />
 
     <TextView
         android:id="@+id/LevelBeforeID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
         android:text="Level Before: "
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/LevelDuringID"
-        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/PumpRateID"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/PumpRateID"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="18dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="@+id/PumpRateID" />
 
     <TextView
         android:id="@+id/LevelDuringID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
         android:text="Level During: "
-        android:layout_marginStart="16dp"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/ColumnLengthID"
+        android:textSize="18sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/LevelBeforeID"
+        android:layout_marginTop="13dp"
+        app:layout_constraintTop_toBottomOf="@+id/LevelBeforeID"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="@+id/LevelBeforeID" />
 
     <TextView
         android:id="@+id/ColumnLengthID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
         android:text="Column Length: "
-        android:layout_marginStart="16dp"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="18sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/LevelDuringID"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/LevelDuringID"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="33dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="@+id/LevelDuringID" />
 
 
     <TextView
         android:id="@+id/CompleteDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
         android:text="Complete Date: "
-        android:layout_marginStart="16dp"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="15dp"
-        app:layout_constraintTop_toBottomOf="@+id/DrillersNameID"
+        android:textSize="18sp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/CasingDiam"
+        app:layout_constraintRight_toRightOf="@+id/DrillersNameID"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:layout_marginBottom="12dp"
+        app:layout_constraintLeft_toLeftOf="@+id/DrillersNameID" />
 
     <TextView
         android:id="@+id/CasingDiam"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
         android:text="Casing Diameter: "
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="17dp"
-        app:layout_constraintTop_toBottomOf="@+id/CompleteDate"
+        android:textSize="18sp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/TotalDepthID"
+        app:layout_constraintRight_toRightOf="@+id/CompleteDate"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:layout_marginBottom="9dp"
+        app:layout_constraintLeft_toLeftOf="@+id/CompleteDate" />
 
 </android.support.constraint.ConstraintLayout>
