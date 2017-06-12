@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Well Tag Number Lookup</string>
+    <string name="tag_number">Tag Number:</string>
+    <string name="aa999999">AA999999</string>
+    <string name="look_up">Look Up</string>
+    <string name="tag_numberET">Tag Number</string>
+    <string name="aa000000">AA000000</string>
+</resources>
